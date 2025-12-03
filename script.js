@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const id = e.target.id - 1;
         if (board[id] !== '') return;
 
-        board[id] = currentPlayer === player1 ? 'X' : 'O';
+        board[id] = currentPlayer === player1 ? 'x' : 'o';
         e.target.textContent = board[id];
 
         if (checkWin()) {
